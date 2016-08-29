@@ -13,7 +13,7 @@ set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+font pango:Fira Code, FontAwesome 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -95,12 +95,12 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-set $space1 "1 Random"
-set $space2 "2: Terminals"
-set $space3 "3: Code"
-set $space4 "4: Internet"
-set $space9 "9: Chat"
-set $space0 "10: Music"
+set $space1 "1: Random"
+set $space2 "2: "
+set $space3 "3"
+set $space4 "4"
+set $space9 "9: "
+set $space0 "10: "
 
 # switch to workspace
 bindsym $mod+1 workspace $space1
@@ -165,6 +165,8 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
   status_command i3status
+  font xft:Fira Code, FontAwesome 8
+
   colors {
     separator #969896
     background #1d1f21
