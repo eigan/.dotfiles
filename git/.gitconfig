@@ -1,3 +1,8 @@
 [user]
 	email = mail@einargangso.no
 	name = Einar Gangsø
+	useconfigonly = true
+[push]
+	default = simple
+[core]
+	excludesfile = /home/einar/.gitignore_global
