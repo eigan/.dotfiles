@@ -13,7 +13,7 @@ set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Fira Code, FontAwesome 8
+font pango:Source Code Pro, FontAwesome 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -97,7 +97,7 @@ bindsym $mod+a focus parent
 
 set $space1 "1: Random"
 set $space2 "2: "
-set $space3 "3"
+set $space3 "3: "
 set $space4 "4"
 set $space9 "9: "
 set $space0 "10: "
@@ -127,6 +127,8 @@ bindsym $mod+Shift+9 move container to workspace $space9
 bindsym $mod+Shift+0 move container to workspace $space0
 
 assign [class="google-chrome"] $space3
+# My spotify versions messes with class stuff: https://github.com/i3/i3/issues/2060
+for_window [class="Spotify"] move to workspace $space0
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
