@@ -35,6 +35,8 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
+bindcode 197 exec i3lock -e 
+
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
 
