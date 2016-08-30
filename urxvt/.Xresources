@@ -3,5 +3,5 @@ URxvt.perl-ext-common: default,matcher,selection-to-clipboard
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
 
-URxvt.font: xft:Fira Code
+URxvt*font: xft:Source Code Pro:pixelsize=11
 URxvt.scrollBar: false
