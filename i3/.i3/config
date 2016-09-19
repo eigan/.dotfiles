@@ -97,6 +97,9 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+# Open first available workspace screen
+bindsym $mod+n exec --no-startup-id i3-msg workspace $(i3-next-workspace)
+
 set $space1 "1: Random"
 set $space2 "2: "
 set $space3 "3: "
