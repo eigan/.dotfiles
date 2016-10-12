@@ -1,0 +1,115 @@
+"*":
+  "activate-power-mode":
+    autoToggle: false
+    particles:
+      spawnCount: {}
+  "atom-autocomplete-php":
+    binComposer: "/home/einar/bin/composer"
+    insertNewlinesForUseStatements: true
+  "autocomplete-plus":
+    confirmCompletion: "tab"
+  core:
+    disabledPackages: [
+      "styleguide"
+      "pigments"
+      "imdone-atom"
+      "todo-manager"
+      "todo-list"
+      "markdown-preview"
+      "language-gfm"
+      "toggle-markdown-task"
+      "markdown-preview-plus-opener"
+      "silent-sync"
+      "remote-sync"
+      "git-time-machine"
+      "jslint"
+      "linter-js-standard"
+      "linter-php"
+      "linter-phpcs"
+    ]
+    excludeVcsIgnoredPaths: false
+    packagesWithKeymapsDisabled: []
+    projectHome: "/home/einar/Projects"
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "atom-dark-fusion-syntax"
+    ]
+  docblockr:
+    param_description: false
+    per_section_indent: true
+    short_primitives: true
+    simple_mode: true
+    spacer_between_sections: true
+  editor:
+    fontFamily: "Source Code Pro Medium"
+    fontSize: 16
+    invisibles: {}
+    preferredLineLength: 120
+    scrollPastEnd: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "675cc3a9-650d-2f6a-7759-ab49b033d709"
+  "file-icons": {}
+  "fuzzy-finder":
+    ignoredNames: [
+      ".git"
+      "node_modules"
+    ]
+  "gruvbox-plus-syntax": {}
+  linter:
+    errorPanelHeight: 22
+  "linter-phpcs":
+    executablePath: "/home/einar/.composer/vendor/bin/phpcs"
+    ignore: "*.blade.php, *.md"
+    tabWidth: 4
+  "linter-phpmd": {}
+  livereload: {}
+  "markdown-preview":
+    liveUpdate: false
+    useGitHubStyle: true
+  "markdown-preview-plus": {}
+  minimap:
+    absoluteMode: true
+    adjustAbsoluteModeHeight: true
+    scrollAnimation: true
+  "one-dark-ui":
+    layoutMode: "Compact"
+  "php-integrator-autocomplete-plus":
+    insertNewlinesForUseStatements: true
+  "php-integrator-linter":
+    validateDocblockCorrectness: false
+  "php-integrator-navigation": {}
+  "php-integrator-symbol-viewer":
+    defaultShowInherited: true
+  "project-manager": {}
+  "silent-sync":
+    useConfigFile: true
+  "split-diff": {}
+  "todo-show":
+    ignoreThesePaths: [
+      "**/node_modules/"
+      "**/vendor/"
+      "**/bower_components/"
+      "**/public/"
+      "**/storage/"
+    ]
+    sortBy: "Path"
+  "tree-view":
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "
+".html.text.vue":
+  editor:
+    preferredLineLength: 120
+    tabLength: 4
+".md.text":
+  editor:
+    preferredLineLength: 120
+    tabLength: 4
