@@ -35,7 +35,9 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
-bindcode 197 exec i3lock -e 
+bindcode 197 exec i3lock-fancy -g
+
+bindcode 63 --release exec scrot -s '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Pictures/'
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
