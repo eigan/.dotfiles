@@ -24,7 +24,6 @@
       "git-time-machine"
       "jslint"
       "linter-js-standard"
-      "linter-php"
       "linter-phpcs"
     ]
     excludeVcsIgnoredPaths: false
