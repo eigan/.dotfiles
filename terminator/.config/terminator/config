@@ -11,6 +11,7 @@
     show_titlebar = False
     font = Source Code Pro Medium 10
     background_color = "#002b36"
+    scrollback_infinite = True
 [layouts]
   [[default]]
     [[[child1]]]
