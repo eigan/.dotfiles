@@ -6,3 +6,4 @@
 	default = simple
 [core]
 	excludesfile = /home/einar/.gitignore_global
+	attributesfile = /home/einar/.gitattributes
