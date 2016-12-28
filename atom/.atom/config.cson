@@ -74,6 +74,9 @@
     scrollAnimation: true
   "one-dark-ui":
     layoutMode: "Compact"
+  "php-cs-fixer":
+    executablePath: "/home/einar/.composer/vendor/bin/php-cs-fixer"
+    executeOnSave: true
   "php-integrator-autocomplete-plus":
     insertNewlinesForUseStatements: true
   "php-integrator-linter":
