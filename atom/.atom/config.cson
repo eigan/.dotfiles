@@ -59,7 +59,7 @@
   linter:
     errorPanelHeight: 22
   "linter-phpcs":
-    executablePath: "/home/einar/.composer/vendor/bin/phpcs"
+    executablePath: "/home/einar/.config/composer/vendor/bin/phpcs"
     ignore: "*.blade.php, *.md"
     tabWidth: 4
   "linter-phpmd": {}
@@ -75,10 +75,12 @@
   "one-dark-ui":
     layoutMode: "Compact"
   "php-cs-fixer":
-    executablePath: "/home/einar/.composer/vendor/bin/php-cs-fixer"
+    executablePath: "/home/einar/.config/composer/vendor/bin/php-cs-fixer"
     executeOnSave: true
+    pathMode: "intersection"
   "php-integrator-autocomplete-plus":
     insertNewlinesForUseStatements: true
+  "php-integrator-base": {}
   "php-integrator-linter":
     validateDocblockCorrectness: false
   "php-integrator-navigation": {}
