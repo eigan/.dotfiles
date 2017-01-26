@@ -9,6 +9,7 @@
   "autocomplete-plus":
     confirmCompletion: "tab"
   core:
+    autoHideMenuBar: true
     disabledPackages: [
       "styleguide"
       "pigments"
@@ -24,7 +25,7 @@
       "git-time-machine"
       "jslint"
       "linter-js-standard"
-      "linter-phpcs"
+      "metrics"
     ]
     excludeVcsIgnoredPaths: false
     packagesWithKeymapsDisabled: []
@@ -42,7 +43,7 @@
     spacer_between_sections: true
   editor:
     fontFamily: "Source Code Pro Medium"
-    fontSize: 13
+    fontSize: 11
     invisibles: {}
     preferredLineLength: 120
     scrollPastEnd: true
@@ -53,7 +54,6 @@
   "fuzzy-finder":
     ignoredNames: [
       ".git"
-      "node_modules"
     ]
   "gruvbox-plus-syntax": {}
   linter:
