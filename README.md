@@ -2,23 +2,29 @@
 My notes for setting up a fresh installation.
 
 ### Fonts
-[Fira code](https://github.com/tonsky/FiraCode),
-[FontAwesome] (http://fontawesome.io/)
-[Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
+[otf-fira-code](https://aur.archlinux.org/pkgbase/otf-fira-code/),
+[otf-font-awesome] (https://aur.archlinux.org/packages/otf-font-awesome/)
+[adobe-source-code-pro-fonts](https://www.archlinux.org/packages/extra/any/adobe-source-code-pro-fonts/)
 
-### Symlinks
+### Setup
 Install [stow](https://www.gnu.org/software/stow/) from package manager.
- 
+
 Stow requires the `.dotfiles` to be in `~`. Use `stow -t ~` if `.dotfiles` is somewhere else.
 
 ```
 cd .dotfiles
-stow <folder>
+stow <folder> # Symlinks files if folders exists. Else symlinks entire folders
 ```
 
-### Other requirements
+### Requirements
 ```
+stow
 rofi
+alsa-utils # i3 config (amixer volume)
+
+# i3
+i3
+i3lock
 ```
 
 
