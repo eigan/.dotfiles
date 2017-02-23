@@ -7,6 +7,7 @@
 [core]
 	excludesfile = /home/einar/.gitignore_global
 	attributesfile = /home/einar/.gitattributes
+	editor = vim
 [alias]
 	cleanup-remote="!git branch -r --merged | grep -v master | sed 's/origin\\///' | xargs -n 1 echo && echo '\nRun git cleanup-execute to delete these remote branches'"
 	cleanup-remote-execute="!git branch -r --merged | grep -v master | sed 's/origin\\///' | xargs -n 1 git push origin --delete"

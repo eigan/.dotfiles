@@ -1,2 +1,5 @@
 /silent-sync.json
 .sass-cache/
+vendor/
+node_modules
+*.db
