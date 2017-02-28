@@ -20,7 +20,8 @@ bindcode 197 exec lock
 bindcode 63 --release exec scrot -s '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Pictures/'
 
 # App launcher: Bind to $mod+tab
-bindsym $mod+Tab exec rofi -show run -lines 3 -eh 2 -width 30 -padding 15 -opacity "35" -bw 2
+# rofi -show run -lines 5 -width 30 -bw 3
+bindsym $mod+Tab exec rofi -show run -lines 5 -width 30 -bw 3
 
 # change focus
 bindsym $mod+j focus left
@@ -149,20 +150,26 @@ bar {
   status_command i3status | i3status-wrapper.py
 
   colors {
-    separator #969896
-    background #1d1f21
-    statusline #c5c8c6
-    focused_workspace #81a2be #81a2be #1d1f21
-    active_workspace #373b41 #373b41 #ffffff
-    inactive_workspace #282a2e #282a2e #969896
-    urgent_workspace #cc6666 #cc6666 #ffffff
+    background #13293D
+    statusline #247BA0
+    separator  #006494
+
+    focused_workspace  #006494 #006494 #E8F1F2
+    active_workspace   #13293D #13293D #E8F1F2
+    inactive_workspace #13293D #13293D #247BA0
+    urgent_workspace   #ED6A5A #ED6A5A #E8F1F2
+    binding_mode       #ED6A5A #ED6A5A #E6EBE0
   }
 }
 
-client.focused #81a2be #81a2be #1d1f21 #282a2e
-client.focused_inactive #373b41 #373b41 #969896 #282a2e
-client.unfocused #282a2e #282a2e #969896 #282a2e
-client.urgent #373b41 #cc6666 #ffffff #cc6666
+# class                 border  bground text    indicator child_border
+client.focused          #006494 #006494 #E8F1F2 #006494   #006494
+client.focused_inactive #13293D #13293D #E8F1F2 #13293D   #13293D
+client.unfocused        #13293D #13293D #247BA0 #13293D   #13293D
+client.urgent           #ED6A5A #ED6A5A #E6EBE0 #ED6A5A   #ED6A5A
+client.placeholder      #13293D #13293D #E8F1F2 #13293D   #13293D
+
+client.background       #E8F1F2
 
 # Other keybindings
 # MUSIC CONTROL
