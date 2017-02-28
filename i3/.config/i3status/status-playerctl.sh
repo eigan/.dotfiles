@@ -16,5 +16,5 @@ if [[ "$spotify_status" = "Playing" ]]; then
 elif [[ "$spotify_status" = "Paused" ]]; then
 	echo -n "  $spotify_artist - $spotify_song" || exit 1
 else
-	echo -n "dd"
+	echo -n ""
 fi
