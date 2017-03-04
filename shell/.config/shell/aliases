@@ -1,3 +1,6 @@
+# xorg
+alias x="startx"
+
 # Homestead
 alias hup="cd $HOMESTEAD && vagrant up"
 alias h="cd $HOMESTEAD && vagrant ssh"
