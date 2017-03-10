@@ -74,11 +74,27 @@
 // style the background and foreground colors on the atom-text-editor-element itself
 * {
   // color: white;
-  transition: all 0.03s ease;
+  transition: all 0.05s ease;
 }
 
 
 // To style other content in the text editor's shadow DOM, use the ::shadow expression
 atom-text-editor::shadow .cursor {
   // border-color: red;
+}
+
+.status-added,
+.list-tree li:not(.list-nested-item).status-added,
+.list-tree li.list-nested-item.status-added > .list-item {
+    color: #90bb71;
+}
+
+.status-modified,
+.list-tree li:not(.list-nested-item).status-modified,
+.list-tree li.list-nested-item.status-modified > .list-item {
+    color: #efc662;
+}
+
+.syntax--function {
+    color: #ca9cc3;
 }
