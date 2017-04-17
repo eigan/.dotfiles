@@ -1,3 +1,7 @@
+# Linux
+alias halt="shutdown -h now"
+alias restart="shutdown -r now"
+
 # xorg
 alias x="startx"
 
