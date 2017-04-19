@@ -53,8 +53,8 @@ tray-padding = 0
 ;scroll-up = i3wm-wsnext
 ;scroll-down = i3wm-wsprev
 
-[bar/example]
-monitor = "DisplayPort-0"
+[bar/main]
+monitor = ${env:MONITOR_MAIN:"DisplayPort-0"}
 inherit = bar/base
 
 modules-left = i3 xwindow
@@ -62,14 +62,14 @@ modules-center = music
 modules-right = filesystem custom-volume memory cpu eth temperature date pacman
 
 [bar/left]
-monitor = "DisplayPort-1"
+monitor = ${env:MONITOR_LEFT:"DisplayPort-1"}
 inherit = bar/base
 
 modules-left = i3
 modules-center =
 
 [bar/right]
-monitor = "DisplayPort-1"
+monitor = ${env:MONITOR_RIGHT:"DisplayPort-1"}
 inherit = bar/base
 
 modules-left = i3

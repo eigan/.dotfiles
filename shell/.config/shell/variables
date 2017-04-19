@@ -1,1 +1,3 @@
 HOMESTEAD=~/projects/opensource/homestead
+
+source ~/.config/shell/env
