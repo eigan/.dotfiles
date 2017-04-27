@@ -1,24 +1,26 @@
 [global_config]
+  broadcast_default = off
 [keybindings]
-[profiles]
-  [[default]]
-    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
-    visible_bell = True
-    background_image = None
-    background_darkness = 0.49
-    use_system_font = False
-    foreground_color = "#839496"
-    show_titlebar = False
-    font = Source Code Pro Medium 10
-    background_color = "#002b36"
-    scrollback_infinite = True
 [layouts]
   [[default]]
     [[[child1]]]
+      parent = window0
       profile = default
       type = Terminal
-      parent = window0
     [[[window0]]]
-      type = Window
       parent = ""
+      type = Window
 [plugins]
+[profiles]
+  [[default]]
+    background_color = "#002b36"
+    background_darkness = 0.49
+    cursor_color = "#839496"
+    cursor_shape = underline
+    font = Source Code Pro Medium 10
+    foreground_color = "#839496"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    scrollback_infinite = True
+    show_titlebar = False
+    use_system_font = False
+    visible_bell = True
