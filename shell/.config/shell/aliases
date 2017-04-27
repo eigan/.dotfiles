@@ -1,6 +1,7 @@
 # Linux
 alias halt="shutdown -h now"
 alias restart="shutdown -r now"
+alias df="df -x tmpfs -x devtmpfs -h"
 
 # xorg
 alias x="startx"
