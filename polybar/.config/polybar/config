@@ -54,31 +54,27 @@ tray-padding = 0
 ;scroll-down = i3wm-wsprev
 
 [bar/main]
-monitor = ${env:MONITOR_MAIN:"DisplayPort-0"}
+;monitor = ${env:MONITOR_MAIN:DisplayPort-0}
+monitor = DisplayPort-0
 inherit = bar/base
 
-modules-left = i3 xwindow
-modules-center = music
-modules-right = filesystem custom-volume memory cpu eth temperature date pacman
+modules-left = i3
+modules-center =
+modules-right = music filesystem custom-volume memory cpu eth temperature date pacman
 
 [bar/left]
-monitor = ${env:MONITOR_LEFT:"DisplayPort-1"}
+monitor = ${env:MONITOR_LEFT:DisplayPort-1}
 inherit = bar/base
 
 modules-left = i3
-modules-center =
+modules-right = date
 
 [bar/right]
-monitor = ${env:MONITOR_RIGHT:"DisplayPort-1"}
+monitor = ${env:MONITOR_RIGHT:DisplayPort-2}
 inherit = bar/base
 
 modules-left = i3
-modules-center =
-
-
-[module/xwindow]
-type = internal/xwindow
-label = %title:0:30:...%
+modules-right = date
 
 [module/filesystem]
 type = internal/fs
