@@ -95,7 +95,7 @@ strip-wsnumbers = true
 pin-workspaces = true
 
 label-mode-padding = 2
-label-mode-foreground = #000
+label-mode-foreground = ${colors.foreground}
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
