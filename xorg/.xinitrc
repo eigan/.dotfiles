@@ -37,6 +37,6 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-for i in $HOME/.boot/*;do source $i;done
+for i in $HOME/.boot/x/*;do source $i;done
 
 exec i3
