@@ -76,6 +76,8 @@ bindsym $mod+a focus parent
 # Open first available workspace screen
 bindsym $mod+n exec --no-startup-id i3-msg workspace $(i3-next-workspace)
 
+new_window 1pixel
+
 set $space1 "1:"
 set $space2 "2:"
 set $space3 "3: "
