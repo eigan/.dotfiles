@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:$HOME/.config/composer/vendor/bin/:node_modules/.bin/:vendor/bin:/usr/local/bin:/usr/lib/node_modules/.bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/einar/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
