@@ -188,16 +188,13 @@ type = internal/temperature
 thermal-zone = 2
 warn-temperature = 60
 
-format =  <ramp> <label>
-format-warn =  <ramp> <label-warn>
+format =  <label>
+format-warn =  <label-warn>
 
 label = %temperature%
 label-warn = %temperature%
 label-warn-foreground = ${colors.secondary}
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
 ramp-foreground = ${colors.foreground-alt}
 
 [module/powermenu]
@@ -205,9 +202,9 @@ type = custom/menu
 
 format-spacing = 1
 
-label-open = 
+label-open = o
 label-open-foreground = ${colors.secondary}
-label-close =  cancel
+label-close = x cancel
 label-close-foreground = ${colors.secondary}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
