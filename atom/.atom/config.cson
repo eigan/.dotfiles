@@ -55,8 +55,9 @@
       ".git"
     ]
   "gruvbox-plus-syntax": {}
-  linter:
-    errorPanelHeight: 22
+  linter: {}
+  "linter-eslint":
+    lintHtmlFiles: true
   "linter-phpcs":
     executablePath: "/home/einar/.config/composer/vendor/bin/phpcs"
     ignore: "*.blade.php, *.md"
