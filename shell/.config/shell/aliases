@@ -2,6 +2,13 @@
 alias halt="shutdown -h now"
 alias restart="shutdown -r now"
 alias df="df -x tmpfs -x devtmpfs -h"
+alias c="clear"
+
+# Pacaur
+alias pup="pacaur -Syu"
+alias pi="pacaur -S"
+alias ps="pacaur -Ss"
+alias pq="pacaur -Qi"
 
 # xorg
 alias x="startx"
@@ -9,3 +16,6 @@ alias x="startx"
 # Homestead
 alias hup="cd $HOMESTEAD && vagrant up"
 alias h="cd $HOMESTEAD && vagrant ssh"
+
+# Laravel
+alias a="php artisan"
