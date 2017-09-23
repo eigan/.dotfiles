@@ -9,3 +9,10 @@ alias x="startx"
 # Homestead
 alias hup="cd $HOMESTEAD && vagrant up"
 alias h="cd $HOMESTEAD && vagrant ssh"
+
+# Docker utils
+alias wx="./docker/xdebug_toggle"
+
+# PHP
+alias phpx="php -d zend_extension=xdebug.so"
+alias phpxu="php -d zend_extension=xdebug.so vendor/bin/phpunit"
