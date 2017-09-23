@@ -1,0 +1,3 @@
+sudo ddcutil setvcp 10 $1 --async -d 1
+sudo ddcutil setvcp 10 $1 --async -d 2
+sudo ddcutil setvcp 10 $1 --async -d 3
