@@ -1,0 +1,1 @@
+sudo ddcutil setvcp 10 $2 --async -d $1

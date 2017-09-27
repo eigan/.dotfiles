@@ -19,3 +19,10 @@ alias h="cd $HOMESTEAD && vagrant ssh"
 
 # Laravel
 alias a="php artisan"
+
+# Docker utils
+alias wx="./docker/xdebug_toggle"
+
+# PHP
+alias phpx="php -d zend_extension=xdebug.so"
+alias phpxu="php -d zend_extension=xdebug.so vendor/bin/phpunit"
