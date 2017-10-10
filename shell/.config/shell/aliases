@@ -17,6 +17,13 @@ alias x="startx"
 alias hup="cd $HOMESTEAD && vagrant up"
 alias h="cd $HOMESTEAD && vagrant ssh"
 
+# PHP
+alias phpx='php -d "zend_extension=xdebug.so"'
+alias phpxu='phpx vendor/bin/phpunit'
+
+# Docker / xdebug thing
+alias wx="sh docker/xdebug_toggle"
+
 # Laravel
 alias a="php artisan"
 
