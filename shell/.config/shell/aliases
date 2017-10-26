@@ -33,3 +33,4 @@ alias wx="./docker/xdebug_toggle"
 # PHP
 alias phpx="php -d zend_extension=xdebug.so"
 alias phpxu="php -d zend_extension=xdebug.so vendor/bin/phpunit"
+alias phpp="php -d zend_extension=xdebug.so -d xdebug.profiler_enable=1"
