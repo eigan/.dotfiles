@@ -19,6 +19,7 @@ cd .dotfiles
 stow
 rofi
 alsa-utils # i3 config (amixer volume)
+pulseaudio-alsa # For polybar volume
 
 # Fonts
 otf-fira-code
@@ -37,5 +38,12 @@ i3lock
 ```
 Reload Xresource with xrdb after change
 xrdb .Xresource
+```
+
+
+```
+# Backup with encryption on the fly
+tar --xattrs -czvp ~/bin/ | gpg --encrypt --recipient mail@einargangso.no -o backup-piped.tar.gz.gpg
+
 ```
 
