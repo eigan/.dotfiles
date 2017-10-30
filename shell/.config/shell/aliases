@@ -4,11 +4,12 @@ alias restart="shutdown -r now"
 alias df="df -x tmpfs -x devtmpfs -h"
 alias c="clear"
 
-# Pacaur
-alias pup="pacaur -Syu"
-alias pi="pacaur -S"
-alias ps="pacaur -Ss"
-alias pq="pacaur -Qi"
+# Package management
+alias archupdate="pacaur -Syu"
+alias archinstall="pacaur -S"
+alias archsearch="pacaur -Ss"
+alias archquery="pacaur -Qi"
+alias archremove="pacaur -R"
 
 # xorg
 alias x="startx"
