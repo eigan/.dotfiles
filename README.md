@@ -11,7 +11,15 @@ mkdir .config
 git clone git@github.com:eigan/.dotfiles.git
 cd .dotfiles
 
+sudo pacman -S --needed $(comm -12 <(pacman -Slq|sort) <(sort _setup/pkglist.txt) )
+pacaur -S --noedit --noconfirm --needed setup/localpkglist.txt
+
+
 # stow <stuff>
+
+# ZSH
+# Install oh-my-zsh
+
 ```
 
 ### Packages
