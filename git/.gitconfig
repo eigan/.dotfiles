@@ -7,7 +7,19 @@
 [core]
 	excludesfile = /home/einar/.gitignore_global
 	attributesfile = /home/einar/.gitattributes
-	editor = vim
+	editor = micro
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [alias]
-	cleanup-remote="!git branch -r --merged | grep -v master | sed 's/origin\\///' | xargs -n 1 echo && echo '\nRun git cleanup-execute to delete these remote branches'"
-	cleanup-remote-execute="!git branch -r --merged | grep -v master | sed 's/origin\\///' | xargs -n 1 git push origin --delete"
+	cleanup="!git branch --merged develop --no-color | grep  -v '\\*\\|master\\|\\hotfix\\|develop' | xargs -r0 -n1 echo"
+	cleanup-execute="!git branch --merged develop --no-color | grep  -v '\\*\\|master\\|\\hotfix\\|develop' | xargs git branch -d"
+	cleanup-remote="!git branch -r --merged | grep 'eg\\-*' | sed 's/origin\\///' | xargs -n 1 echo && echo '\nRun git cleanup-execute to delete these remote branches'"
+	cleanup-remote-execute="!git branch -r --merged | grep 'eg\\-*' | sed 's/origin\\///' | xargs -n 1 git push origin --delete"
+#	delete-both="!f() { git branch -D "$1" && git push origin --delete "$1"; }; f"
+[color]
+	ui = true
+
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
