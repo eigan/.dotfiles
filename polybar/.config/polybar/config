@@ -78,7 +78,7 @@ modules-right = date
 type = internal/fs
 interval = 25
 
-mount-0 = /
+mount-0 = /home
 
 label-mounted =  %percentage_used%%
 label-unmounted = %mountpoint% not mounted
