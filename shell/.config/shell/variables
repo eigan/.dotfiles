@@ -1,5 +1,7 @@
 HOMESTEAD=~/projects/opensource/homestead
 
+EDITOR=micro
+
 # oh-my-zsh plugin: https://github.com/MichaelAquilina/zsh-you-should-use
 YSU_MODE=ALL
 YSU_HARDCORE=1
