@@ -20,8 +20,7 @@ bindcode 197 exec lock
 bindcode 63 --release exec scrot -s '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Pictures/'
 
 # App launcher: Bind to $mod+tab
-# rofi -show run -lines 5 -width 30 -bw 3
-bindsym $mod+Tab exec rofi -show run -lines 5 -width 30 -bw 3
+bindsym $mod+Tab exec rofi -show run
 
 # change focus
 bindsym $mod+j focus left
@@ -76,7 +75,8 @@ bindsym $mod+a focus parent
 # Open first available workspace screen
 bindsym $mod+n exec --no-startup-id i3-msg workspace $(i3-next-workspace)
 
-new_window 1pixel
+new_window pixel 1
+hide_edge_borders horizontal
 
 set $space1 "1:"
 set $space2 "2:"
@@ -149,13 +149,13 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # class                 border  bground text    indicator child_border
-client.focused          #006494 #006494 #E8F1F2 #006494   #006494
-client.focused_inactive #13293D #13293D #E8F1F2 #13293D   #13293D
-client.unfocused        #13293D #13293D #247BA0 #13293D   #13293D
+client.focused          #00171f #006494 #E8F1F2 #383C4A   #383C4A
+client.focused_inactive #13293D #13293D #E8F1F2 #13293D   #00171f
+client.unfocused        #13293D #13293D #247BA0 #13293D   #00171f
 client.urgent           #ED6A5A #ED6A5A #E6EBE0 #ED6A5A   #ED6A5A
-client.placeholder      #13293D #13293D #E8F1F2 #13293D   #13293D
+client.placeholder      #ffffff #13293D #E8F1F2 #13293D   #13293D
 
-client.background       #E8F1F2
+client.background       #ffffff
 
 # Other keybindings
 # MUSIC CONTROL

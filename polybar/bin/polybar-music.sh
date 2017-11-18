@@ -1,7 +1,8 @@
 
-spotify_status=$(playerctl status)
-spotify_artist=$(playerctl metadata xesam:artist)
-spotify_song=$(playerctl metadata xesam:title)
+spotify_status=$(playerctl status 2> /dev/null)
+spotify_artist=$(playerctl metadata xesam:artist 2> /dev/null)
+spotify_song=$(playerctl metadata xesam:title 2> /dev/null)
+
 
 if [[ "$spotify_status" = "Playing" ]]; then
 	echo -n "  $spotify_artist - $spotify_song" || exit 1
