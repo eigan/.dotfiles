@@ -53,7 +53,8 @@ monitor = ${env:MONITOR:DisplayPort-0}
 inherit = bar/base
 
 modules-left = i3
-modules-right = music filesystem custom-volume memory cpu eth temperature date pacman
+modules-right = music pacman mail
+modules-center = date
 
 tray-position = right
 tray-padding = 5
@@ -73,7 +74,7 @@ monitor = ${env:MONITOR:DisplayPort-2}
 inherit = bar/base
 
 modules-left = i3
-modules-right = date
+modules-right = filesystem custom-volume memory cpu eth temperature date
 
 [module/filesystem]
 type = internal/fs
@@ -107,11 +108,12 @@ label-focused-padding = 2
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %index%
 label-unfocused-padding = 2
+label-unfocused-foreground = #004459
 
 ; visible = Active workspace on unfocused monitor
 label-visible = %index%
 label-visible-background = ${self.label-focused-background}
-label-visible-foreground = #003459
+label-visible-foreground = #004459
 label-visible-padding = 2
 
 ; urgent = Workspace with urgency hint set
@@ -234,4 +236,10 @@ screenchange-reload = true
 margin-top = 5
 margin-bottom = 5
 
-; vim:ft=dosini
+[module/mail]
+type = custom/script
+interval = 10
+format = <label>
+format-prefix = "  "
+format-prefix-foreground = ${colors.foreground-alt}
+exec = ~/.config/polybar/mail

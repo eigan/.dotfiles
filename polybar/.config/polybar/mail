@@ -1,0 +1,24 @@
+#!/usr/bin/python
+
+import imaplib
+import yaml
+import os
+
+mails = []
+script_dir = os.path.dirname(__file__)
+
+with open(os.path.join(script_dir, "mail.yaml"), 'r') as stream:
+    try:
+        accounts = (yaml.load(stream))
+
+        for account in accounts:        
+            obj = imaplib.IMAP4_SSL(account['host'],993)
+            obj.login(account['username'], account['password']) # write your email and password
+            obj.select()
+
+            mails.append(str(len(obj.search(None, 'UnSeen')[1][0].split())))
+
+        print(" | ".join(mails))
+        
+    except yaml.YAMLError as exc:
+        print(exc)
