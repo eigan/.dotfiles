@@ -1,0 +1,82 @@
+/* -*- mode: css; -*- */
+
+/**
+ * ROFI Color theme
+ */
+
+/* global settings and color variables */
+* {
+
+    font: "FiraCode 10";
+
+    /* fg-color: #c8c8d0; */
+    fg-color: #fff;
+    bg-color: #00171f;
+
+    /* main bg */
+    bg-trans: #00171f;
+
+    /* Make text color white and background fully transparent */
+    text-color:        #007ea7;
+    background-color:  rgba(0,0,0,0);
+
+    dim-trans: #fff;
+    bg-accent: #00171f;
+    accent-trans: rgba(0,0,0,0.4);
+
+}
+
+#window {
+    transparency:  "real";
+
+    orientation:  horizontal;
+    children:     [mainbox];
+
+    background-color: @bg-trans;
+
+    width: 250px;
+}
+
+
+#inputbar {
+    background-color: @bg-color;
+    padding: 10px;
+}
+
+
+#listview {
+    expand: false;
+    lines: 5;
+}
+
+#element {
+    padding:  7px 5px 7px 5px;
+}
+
+#element selected normal {
+    text-color: #00a8e8;	
+    background-color: @accent-trans;
+}
+
+#element normal active {
+    background-color: @dim-trans;
+}
+
+
+#element selected active {
+    background-color:  @dim-trans;
+}
+
+#element selected urgent {
+    background-color:  DarkOrange;
+}
+
+
+#sidebar {
+    padding: 5px;
+}
+
+
+#prompt {
+    enabled: false;
+}

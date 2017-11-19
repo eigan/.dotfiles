@@ -1,0 +1,11 @@
+rofi.show-icons: false
+rofi.drun-icon-theme: Papirus
+rofi.modi: window,run,ssh,drun
+
+rofi.theme: eigan.rasi
+
+;rofi.color-enabled: true
+;rofi.color-window: #044253, #000000, #005467
+;rofi.color-normal: #002b37, #819396, #002b37, #003642, #819396
+;rofi.color-active: #121617, #008ed4, #002b37, #003642, #008ed4
+;rofi.color-urgent: #002b37, #da4281, #002b37, #003642, #da4281
