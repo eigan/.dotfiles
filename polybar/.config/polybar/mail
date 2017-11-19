@@ -16,9 +16,12 @@ with open(os.path.join(script_dir, "mail.yaml"), 'r') as stream:
             obj.login(account['username'], account['password']) # write your email and password
             obj.select()
 
-            mails.append(str(len(obj.search(None, 'UnSeen')[1][0].split())))
+            mailCount = str(len(obj.search(None, 'UnSeen')[1][0].split()))
+            
+            if mailCount != "0": mails.append(mailCount)
 
-        print(" | ".join(mails))
+        if len(mails):
+            print(" | ".join(mails))
         
     except yaml.YAMLError as exc:
         print(exc)

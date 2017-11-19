@@ -174,7 +174,7 @@ label = %date% %time%
 type = custom/script
 
 exec = polybar-volume.sh
-interval = 0.1
+interval = 1
 
 scroll-up = pactl set-sink-volume 1 +1%
 scroll-down = pactl set-sink-volume 1 -1%
