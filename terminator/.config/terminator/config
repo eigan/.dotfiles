@@ -13,7 +13,7 @@
 [plugins]
 [profiles]
   [[default]]
-    background_color = "#002b36"
+    background_color = "#00171f"
     background_darkness = 0.49
     cursor_color = "#839496"
     cursor_shape = underline

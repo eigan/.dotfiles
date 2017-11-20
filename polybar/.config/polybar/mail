@@ -3,6 +3,7 @@
 import imaplib
 import yaml
 import os
+import sys
 
 mails = []
 script_dir = os.path.dirname(__file__)
@@ -18,10 +19,13 @@ with open(os.path.join(script_dir, "mail.yaml"), 'r') as stream:
 
             mailCount = str(len(obj.search(None, 'UnSeen')[1][0].split()))
             
-            if mailCount != "0": mails.append(mailCount)
+            mails.append(mailCount)
 
-        if len(mails):
-            print(" | ".join(mails))
+        if(all("0" == count for count in mails)):
+            sys.exit(1)    
         
+        print(" | ".join(mails))
+        
+            
     except yaml.YAMLError as exc:
         print(exc)
