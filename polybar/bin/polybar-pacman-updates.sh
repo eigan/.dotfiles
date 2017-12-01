@@ -36,7 +36,7 @@ else
         echo "" > $cache
         echo ""
     else
-        echo "%{F-} $pac:$aur" > $cache
-        echo "%{F-} $pac:$aur"
+        echo "%{F-} $pac | $aur" > $cache
+        echo "%{F-} $pac | $aur"
     fi
 fi
