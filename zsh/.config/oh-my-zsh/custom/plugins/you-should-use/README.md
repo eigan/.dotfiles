@@ -1,0 +1,1 @@
+https://github.com/MichaelAquilina/zsh-you-should-use
