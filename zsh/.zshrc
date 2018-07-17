@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=./bin:$HOME/bin:$HOME/.config/composer/vendor/bin/:node_modules/.bin/:vendor/bin:/usr/local/bin:/usr/lib/node_modules/.bin:$HOME/.gem/ruby/2.4.0/bin/:/home/einar/.gem/ruby/2.4.0/bin:$PATH:
+export PATH=./bin:$HOME/bin:$HOME/:node_modules/.bin/:vendor/bin:.config/composer/vendor/bin/:/usr/local/bin:/usr/lib/node_modules/.bin:$HOME/.gem/ruby/2.4.0/bin/:/home/einar/.gem/ruby/2.4.0/bin:$HOME/.yarn/bin/:$PATH:
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
