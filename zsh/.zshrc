@@ -79,3 +79,33 @@ if [ -f ~/.config/shell/aliases ]; then
     source ~/.config/shell/aliases
 fi
 
+source /usr/share/nvm/init-nvm.sh
+
+
+cu() {
+	cd /srv/cc5/customers/$1
+}
+
+_cu() {
+	files=( /srv/cc5/customers/* )  	   
+    COMPREPLY=( ${files[@]##*/} )
+}
+
+complete -F _cu cu
+
+cr() {
+	cd /srv/cc5/$1
+}
+
+_cr() {
+	files=( /srv/cc5/* )  	   
+    COMPREPLY=( ${files[@]##*/} )
+}
+
+culog() {
+	cur=$(pwd)
+	cd ..
+	tail -f storage/logs/laravel.log
+}
+
+complete -F _cr cr
