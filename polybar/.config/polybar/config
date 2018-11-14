@@ -193,8 +193,8 @@ warn-temperature = 60
 format =  <label>
 format-warn =  <label-warn>
 
-label = %temperature%
-label-warn = %temperature%
+label = %temperature-c%
+label-warn = %temperature-c%
 label-warn-foreground = ${colors.secondary}
 
 ramp-foreground = ${colors.foreground-alt}
