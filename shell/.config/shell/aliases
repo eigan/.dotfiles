@@ -5,11 +5,11 @@ alias df="df -x tmpfs -x devtmpfs -h"
 alias c="clear"
 
 # Package management
-alias archupdate="pacaur -Syu"
-alias archinstall="pacaur -S"
-alias archsearch="pacaur -Ss"
-alias archquery="pacaur -Qi"
-alias archremove="pacaur -R"
+alias archupdate="aurman -Syu"
+alias archinstall="aurman -S"
+alias archsearch="aurman -Ss"
+alias archquery="aurman -Qi"
+alias archremove="aurman -R"
 
 # xorg
 alias x="startx"
