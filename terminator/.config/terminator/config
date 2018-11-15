@@ -20,8 +20,7 @@
     font = Source Code Pro Medium 9
     foreground_color = "#839496"
     palette = "#fbf1c7:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#7c6f64:#928374:#9d0006:#79740e:#b57614:#076678:#8f3f71:#427b58:#3c3836"
-    scrollback_infinite = True
-    scrollbar_position = hidden
+    scrollback_lines = 3000
     show_titlebar = False
     use_system_font = False
     visible_bell = True
