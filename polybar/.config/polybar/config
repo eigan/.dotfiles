@@ -53,7 +53,7 @@ monitor = ${env:MONITOR:DisplayPort-0}
 inherit = bar/base
 
 modules-left = i3
-modules-right = music pacman mail
+modules-right = music timetrack pacman mail
 modules-center = date
 
 tray-position = right
@@ -134,6 +134,14 @@ interval = 1
 
 format = <label>
 click-left = touch /tmp/polybar-pacman-updates-now
+
+[module/timetrack]
+type = custom/script
+exec = polybar-tt.sh
+interval = 1
+
+format = <label>
+click-left = touch /tmp/polybar-tt-now
 
 [module/cpu]
 type = internal/cpu
