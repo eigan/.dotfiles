@@ -1,0 +1,10 @@
+device_config:
+- id_uuid: e6bba018-24e5-4f11-847a-4f511b9922aa 
+
+- id_uuid: c77cdf28-e6f8-48fc-8bc3-401c97281ef1
+  keyfile: /run/media/einar/usbkey/usbkey
+  automount: true
+
+- id_uuid: 763fabda-9e46-4ddc-b917-d523ddde2e70
+  keyfile: /home/einar/.private/usb.key
+  automount: true
