@@ -138,6 +138,7 @@ click-left = touch /tmp/polybar-pacman-updates-now
 [module/timetrack]
 type = custom/script
 exec = polybar-tt.sh
+exec-if = which tt
 interval = 1
 
 format = <label>
