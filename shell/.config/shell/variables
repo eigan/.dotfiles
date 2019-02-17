@@ -1,6 +1,6 @@
-HOMESTEAD=~/projects/opensource/homestead
+export EDITOR='micro'
+export MANPATH="/usr/local/man:$MANPATH"
 
-EDITOR=micro
 
 # oh-my-zsh plugin: https://github.com/MichaelAquilina/zsh-you-should-use
 YSU_MODE=ALL
