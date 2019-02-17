@@ -1,4 +1,5 @@
 
+source ~/.config/shell/env
 
 ssh_agent_keys=$SSH_AGENT_KEYS
 
@@ -9,7 +10,7 @@ if [ -f ~/.ssh/agent.env ] ; then
         eval `ssh-agent | tee ~/.ssh/agent.env`
 
 		for i in ${ssh_agent_keys[@]}; do
-			ssh-add ${i}
+			ssh-add $i
 		done
     fi
 else
@@ -17,7 +18,7 @@ else
     eval `ssh-agent | tee ~/.ssh/agent.env`
     
 	for i in ${ssh_agent_keys[@]}; do
-		ssh-add ${i}
+		ssh-add $i
 	done
 		
 fi
