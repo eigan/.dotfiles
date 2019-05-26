@@ -1,0 +1,14 @@
+autoload -U add-zsh-hook
+
+hook_function()
+{
+  tt status --today --cache-life 60 >> /dev/null
+
+  if [ $? -ne 0 ]; then
+  	echo "Please fix your hours!!"
+
+    kill -s INT $$
+  fi   
+}
+
+add-zsh-hook preexec hook_function
