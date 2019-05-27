@@ -18,7 +18,7 @@ bindsym $mod+Shift+q kill
 bindcode 197 exec lock
 
 # Screenshot: Bind to *
-bindcode $screenshotKey --release exec scrot -s '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Pictures/'
+bindcode $screenshotKey --release exec flameshot gui -p ~/Pictures
 
 # App launcher: Bind to $mod+tab
 bindsym $mod+Tab exec rofi -show run
