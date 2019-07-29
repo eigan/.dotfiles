@@ -2,11 +2,19 @@ autoload -U add-zsh-hook
 
 hook_function()
 {
-  tt status --today --cache-life 60 >> /dev/null
+  if [[ $1 == tt* ]] || [[ $1 == vim* ]] ; then
+  	# Disable strict mode on `tt` and `vim` command
+  	return
+  fi
+  
+  # Execute command, checks for hours registered
+  tt today --cache-life 60 >> /dev/null
 
   if [ $? -ne 0 ]; then
+  	# `tt` command was unsuccessful. Print angry message!
   	echo "Please fix your hours!!"
-
+  	
+    # Prevent next command
     kill -s INT $$
   fi   
 }
