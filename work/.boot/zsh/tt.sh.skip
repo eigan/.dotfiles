@@ -8,11 +8,18 @@ hook_function()
   fi
   
   # Execute command, checks for hours registered
-  tt today --cache-life 60 >> /dev/null
+  result=$(tt today --cache-life 60)
+  
+  if [ $? -ne 0 ]; then
+      result=$(tt today --cache-clear)
+  fi
 
   if [ $? -ne 0 ]; then
-  	# `tt` command was unsuccessful. Print angry message!
-  	echo "Please fix your hours!!"
+	  
+    echo $result
+
+    # `tt` command was unsuccessful. Print angry message!
+    echo "Please fix your hours!!"
   	
     # Prevent next command
     kill -s INT $$
