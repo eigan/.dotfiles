@@ -25,3 +25,5 @@
 	newHighlight = green bold 22
 [credential]
 	helper = /usr/lib/git-core/git-credential-libsecret
+[rebase]
+	instructionFormat = (%an <%ae>) %s
