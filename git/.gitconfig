@@ -27,3 +27,7 @@
 	helper = /usr/lib/git-core/git-credential-libsecret
 [rebase]
 	instructionFormat = (%an <%ae>) %s
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
