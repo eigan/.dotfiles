@@ -1,0 +1,4 @@
+scp luna:secrets/gpg.asc /tmp/gpg.asc
+
+gpg --import /tmp/gpg.asc
+rm /tmp/gpg.asc

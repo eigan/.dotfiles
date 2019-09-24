@@ -1,0 +1,7 @@
+set -e
+
+scp luna:secrets/passwords.kdbx /tmp/passwords.kdbx
+keepassxc-cli merge -s ~/.config/passwords/db.kdbx /tmp/passwords.kdbx
+rm /tmp/passwords.kdbx
+
+scp ~/.config/passwords/db.kdbx luna:secrets/passwords.kdbx
