@@ -32,3 +32,7 @@
 	gpgsign = true
 [tag]
 	gpgsign = true
+
+[diff]
+    colorMoved = default
+    algorithm = histogram
