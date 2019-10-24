@@ -15,7 +15,7 @@ if os.path.isfile("mail.yaml") == False:
   
 with open(os.path.join(script_dir, "mail.yaml"), 'r') as stream:
     try:
-        accounts = (yaml.load(stream))
+        accounts = (yaml.load(stream, Loader=yaml.FullLoader))
 
         for account in accounts:        
             obj = imaplib.IMAP4_SSL(account['host'],993)
