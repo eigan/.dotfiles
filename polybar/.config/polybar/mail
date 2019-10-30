@@ -10,7 +10,7 @@ mails = []
 script_dir = os.path.dirname(__file__)
 
 
-if os.path.isfile("mail.yaml") == False:
+if os.path.isfile(script_dir + "/mail.yaml") == False:
   sys.exit(1)
   
 with open(os.path.join(script_dir, "mail.yaml"), 'r') as stream:
