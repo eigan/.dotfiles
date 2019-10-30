@@ -3,7 +3,7 @@ export PATH=./bin:$HOME/bin:$HOME/:node_modules/.bin/:vendor/bin:.config/compose
 export PATH="$HOME/.phpenv/bin:$HOME/.phpenv/shims:$PATH"
 
 # Path to zsh init script
-export ZSH=$HOME/.config/zsh/
+export ZSH=$HOME/.config/zsh
 
 phpenv local 7.2.13
 
