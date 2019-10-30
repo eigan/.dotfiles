@@ -22,7 +22,7 @@ else
     touch /tmp/polybar-tt-last
     rm -f /tmp/polybar-tt-now
 
-    tt=$(tt status --clear-cache --oneline | tail -1)
+    tt=$(tt status --cache-clear --oneline | tail -1)
 
     echo "  $tt" > $cache
     echo "  $tt"
