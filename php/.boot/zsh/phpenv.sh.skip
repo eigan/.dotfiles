@@ -1,0 +1,5 @@
+export PATH="$HOME/.phpenv/bin:$PATH"
+eval "$(phpenv init -)"
+
+# Change to your version here
+phpenv shell 7.2.14
