@@ -35,7 +35,7 @@ alias wx="./docker/xdebug_toggle"
 alias phpx="php -d zend_extension=xdebug.so"
 alias phpxu="php -d zend_extension=xdebug.so vendor/bin/phpunit"
 alias phpp="php -d zend_extension=xdebug.so -d xdebug.profiler_enable=1"
-
+alias phpsh="psysh"
 
 # List directory contents
 alias ls='ls --color=tty'
