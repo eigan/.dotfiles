@@ -1,0 +1,4 @@
+{
+	"Ctrl-d": "SpawnMultiCursor",
+	"Esc": "Escape,RemoveAllMultiCursors"
+}
