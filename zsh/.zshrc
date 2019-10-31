@@ -28,7 +28,9 @@ fi
 
 # Boot scripts for zsh/cli
 # Enable by removing the .skip suffix
-for i in $HOME/.boot/zsh/*.sh
-do
-	source $i
-done
+if [ -d $HOME/.boot/zsh/ ]; then
+    for i in $HOME/.boot/zsh/*.sh
+    do
+        source $i
+    done
+fi
