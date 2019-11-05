@@ -1,7 +1,7 @@
 ## History file configuration
 [ -z "$HISTFILE" ] && HISTFILE="$HOME/.zsh_history"
-HISTSIZE=50000
-SAVEHIST=10000
+HISTSIZE=50000000
+SAVEHIST=50000000
 
 ## History command configuration
 setopt extended_history       # record timestamp of command in HISTFILE
