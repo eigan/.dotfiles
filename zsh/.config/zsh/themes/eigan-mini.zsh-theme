@@ -16,7 +16,7 @@ computers=("stua archy einargangsta")
 
 PRE_PROMPT=""
 
-if [[ " ${computers[@]} " =~ " $(hostname -s) " ]]; then
+if [[ ! " ${computers[@]} " =~ " $(hostname -s) " ]]; then
     PRE_PROMPT="%{$fg_bold[blue]%}%{$fg[red]%}  PRODUCTION  %{$reset_color%}"$'\n'
 fi
 
