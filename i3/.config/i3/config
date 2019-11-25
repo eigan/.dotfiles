@@ -23,23 +23,11 @@ bindcode $screenshotKey --release exec flameshot gui -p ~/Pictures
 # App launcher: Bind to $mod+tab
 bindsym $mod+Tab exec rofi -show run
 
-# change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+oslash focus right
-
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
-
-# move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+oslash move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
