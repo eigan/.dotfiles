@@ -29,9 +29,9 @@
 [rebase]
 	instructionFormat = (%an <%ae>) %s
 [commit]
-	gpgsign = true
+	gpgsign = false 
 [tag]
-	gpgsign = true
+	gpgsign = false
 
 [diff]
     colorMoved = default
