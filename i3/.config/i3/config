@@ -95,14 +95,22 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace $space9
 bindsym $mod+Shift+0 move container to workspace $space0
 
+exec --no-startup-id terminator
+
 # My spotify versions messes with class stuff: https://github.com/i3/i3/issues/2060
 for_window [class="Spotify"] move to workspace $space0
+for_window [instance="dropdown"] floating enable
+for_window [instance="dropdown"] resize set 625 400
+for_window [instance="dropdown"] move scratchpad
 
 assign [class="slack"] $space9
 assign [class="telegram-desktop"] $space9
 
 #
 for_window [class="terminator"] focus
+
+# Scratchpad
+bindsym $mod+k [instance="dropdown"] scratchpad show
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
