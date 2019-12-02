@@ -2,7 +2,7 @@
 	email = mail@einargangso.no
 	name = Einar Gangsø
 	useconfigonly = true
-	signingkey = C28A8CD18C1C89C6
+	signingkey = 53F8DF977518FBA3
 [push]
 	default = simple
 [core]
@@ -29,9 +29,9 @@
 [rebase]
 	instructionFormat = (%an <%ae>) %s
 [commit]
-	gpgsign = false 
+	gpgsign = true 
 [tag]
-	gpgsign = false
+	gpgsign = true
 
 [diff]
     colorMoved = default
