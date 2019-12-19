@@ -37,6 +37,7 @@ i3lock
 
 
 ### Other stuff
+Some notes
 ```
 Reload Xresource with xrdb after change
 xrdb .Xresource
