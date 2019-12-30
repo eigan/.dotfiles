@@ -3,6 +3,7 @@ alias halt="shutdown -h now"
 alias restart="shutdown -r now"
 alias df="df -x tmpfs -x devtmpfs -h"
 alias c="clear"
+alias h="history -E"
 
 # Package management
 alias archupdate="yay -Syu"
@@ -13,10 +14,6 @@ alias archremove="yay -R"
 
 # xorg
 alias x="startx"
-
-# Homestead
-alias hup="cd $HOMESTEAD && vagrant up"
-alias h="cd $HOMESTEAD && vagrant ssh"
 
 # PHP
 alias phpx='php -d "zend_extension=xdebug.so"'
