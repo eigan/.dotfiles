@@ -1,1 +1,11 @@
-terminator -e "micro ~/scratch/$1"
+scratch=$1
+if [ "$1" == "" ]; then
+    scratch=$(basename $PWD)
+fi
+
+if [ "$1" == "l" ]; then
+    ls -l ~/scratch/
+    exit
+fi
+
+terminator -e "micro ~/scratch/$scratch"
