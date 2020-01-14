@@ -1,7 +1,7 @@
 {
     "autoclose": true,
     "autoindent": true,
-    "autosave": false,
+    "autosave": true,
     "basename": false,
     "colorcolumn": 0,
     "colorscheme": "default",
@@ -32,7 +32,7 @@
     "pluginrepos": [],
     "rmtrailingws": false,
     "ruler": true,
-    "savecursor": false,
+    "savecursor": true,
     "savehistory": true,
     "saveundo": false,
     "scrollbar": true,
