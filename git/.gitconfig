@@ -16,6 +16,8 @@
 	cleanup-remote="!git branch -r --merged | grep 'eg\\-*' | sed 's/origin\\///' | xargs -n 1 echo && echo '\nRun git cleanup-execute to delete these remote branches'"
 	cleanup-remote-execute="!git branch -r --merged | grep 'eg\\-*' | sed 's/origin\\///' | xargs -n 1 git push origin --delete"
 #	delete-both="!f() { git branch -D "$1" && git push origin --delete "$1"; }; f"
+	commitsAtDate = "!f() { git log --all --pretty='format:%C(yellow)%h %G? %ad%Cred%d %Creset%s%C(cyan) [%cn]' --decorate --after=\"$1 0:00\" --before=\"$1 23:59\" --author \"`git config user.name`\"; }; f"
+    unstage="!git restore --staged " 
 [color]
 	ui = true
 
