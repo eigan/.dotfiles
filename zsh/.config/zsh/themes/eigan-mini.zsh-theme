@@ -12,7 +12,7 @@ current_customer() {
     esac
 }
 
-computers=("stua archy einargangsta")
+computers=("einar stua archy einargangsta")
 
 PRE_PROMPT=""
 
