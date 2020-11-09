@@ -1,0 +1,30 @@
+{
+    "layer": "top",
+	"output": ["DP-1", "DP-2", "DP-3"],
+    "modules-left": ["sway/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["custom/music", "custom/mic-state", "pulseaudio", "tray"],
+    "custom/music": {
+        "format": "{}",
+        "max-length": 40,
+        "interval": 3,
+        "exec": "$HOME/bin/current-music.sh", 
+        "exec-if": "pgrep spotify"
+    },
+
+    "custom/mic-state": {
+        "format": "{}",
+        "return-type": "json",
+        "max-length": 40,
+        "interval": 60,
+        "signal": 8,
+        "exec": "$HOME/bin/mic-state.sh", 
+        "on-click": "pulseaudio-ctl mute-input ; pkill -SIGRTMIN+8 waybar"
+    },
+
+    "clock": {
+        "tooltip-format": "<big>{:%d %b %Y (%W)}</big> \n\n {calendar}"
+    }
+}
+
+

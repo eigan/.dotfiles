@@ -1,0 +1,58 @@
+* {
+    border: none;
+    border-radius: 0px;
+    font-family: Fira Code Medium;
+    font-size: 12px;
+    color: white;
+}
+
+window#waybar {
+    background: #293241;
+    padding: 4px;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+}
+
+window#waybar {
+    transition: none;
+}
+
+
+#workspaces button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+}
+
+#workspaces button.focused {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+#clock {
+    background-color: rgba(255,255,255, 0.1);
+}
+
+box widget label {
+    padding: 0 10px;
+}
+
+box widget #tray {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+box widget image {
+    padding: 0 5px;
+}
+
+.mic-muted {
+    background-color: #DB3A34;
+    min-width: 20px;
+}
+
+.mic-unmuted {
+    background-color: #177E89;
+    min-width: 20px;
+}
