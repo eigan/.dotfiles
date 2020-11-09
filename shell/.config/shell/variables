@@ -5,6 +5,9 @@ fi
 export EDITOR='micro'
 export MANPATH="/usr/local/man:$MANPATH"
 
+export GPG_TTY=$(tty)
+
+export GNUPGHOME=$HOME/.config/gnupg
 
 # zsh plugin: https://github.com/MichaelAquilina/zsh-you-should-use
 YSU_MODE=ALL
