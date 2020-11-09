@@ -2,6 +2,8 @@ set $mod Mod4
 set $screenshotKey 107
 set $xdebugToggle 78
 
+set $MOUSE "1133:49277:Logitech_Gaming_Mouse_G502_Consumer_Control"
+
 input "type:keyboard" {
     xkb_layout varmilo 
 }
@@ -22,6 +24,9 @@ bindsym $mod+Return exec terminator
 
 # kill focused window
 bindsym $mod+Shift+q kill
+
+bindsym F2 exec pulseaudio-ctl mute-input
+
 
 # i3-lock: Bind to F19
 bindcode 197 exec lock
@@ -167,10 +172,19 @@ client.background       #ffffff
 # MUSIC CONTROL
 # - Spotify
 bindsym XF86AudioPlay exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+bindsym F8 exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+
 bindsym XF86AudioNext exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+bindsym F9 exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+
 bindsym XF86AudioPrev exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+bindsym F7 exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+
 bindsym XF86AudioRaiseVolume exec amixer set Master -q 5%+
+bindsym F12 exec amixer set Master -q 5%+
+
 bindsym XF86AudioLowerVolume exec amixer set Master -q 5%-
+bindsym F11 exec amixer set Master -q 5%-
 
 bindcode $xdebugToggle exec /srv/cc5/devel/vagrant/xdebug_toggle
 
