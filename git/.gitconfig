@@ -2,7 +2,7 @@
 	email = mail@einargangso.no
 	name = Einar Gangsø
 	useconfigonly = true
-	signingkey = 53F8DF977518FBA3
+	signingkey = D173D3E08E502946
 [push]
 	default = simple
 [core]
