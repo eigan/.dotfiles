@@ -4,10 +4,11 @@ My notes for setting up a fresh installation.
 ### Installation
 ```sh
 cd ~
-mkdir bin .boot .boot/x .boot/zsh .config
+mkdir bin .boot .boot/zsh .config
 git clone git@github.com:eigan/.dotfiles.git
 cd .dotfiles
 
+stow base
 stow <name-of-package>
 
 # For root packages
@@ -33,6 +34,11 @@ adobe-source-code-pro-fonts
 # i3
 i3
 i3lock
+
+# Sway
+sway
+waybar
+sirula
 ```
 
 
