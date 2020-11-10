@@ -28,7 +28,7 @@
     },
     
     "clock#day": {
-        "format": "{:(%d %W)}",
+        "format": "{:(%d %V)}",
     },
     
     "temperature": {
