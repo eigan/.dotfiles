@@ -42,7 +42,7 @@
     "readonly": false,
     "rmtrailingws": false,
     "ruler": true,
-    "savecursor": true,
+    "savecursor": false,
     "savehistory": true,
     "saveundo": false,
     "scrollbar": true,

@@ -38,3 +38,7 @@
 [diff]
     colorMoved = default
     algorithm = histogram
+[pull]
+	rebase = true
+[gpg]
+	program = gpg2

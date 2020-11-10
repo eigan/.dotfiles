@@ -12,7 +12,6 @@ xkb_symbols "basic" {
 	key <AE08> { [ 8, parenleft, bracketleft, braceleft ] };
 	key <AE09> { [ 9, parenright, bracketright, braceright ] };
 //	key <AE10> { [ 0, equal, braceright, degree, braceright ] };
-
 	
 	key <AE12> { [ backslash, dead_grave, dead_grave ] };
 	key <AD12> { [ asciitilde, asciicircum ] };
