@@ -5,6 +5,11 @@ alias df="df -x tmpfs -x devtmpfs -h"
 alias c="clear"
 alias h="history -E"
 
+
+alias gpg="gpg2 --homedir=$GNUPGHOME"
+alias gpg2="gpg2 --homedir=$GNUPGHOME"
+
+
 # Package management
 alias archupdate="yay -Syu"
 alias archinstall="yay -S"
