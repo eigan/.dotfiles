@@ -2,8 +2,8 @@
     "layer": "top",
 	"output": ["DP-1", "DP-2", "DP-3"],
     "modules-left": ["sway/workspaces"],
-    "modules-center": ["clock"],
-    "modules-right": ["custom/music", "custom/mic-state", "pulseaudio", "tray"],
+    "modules-center": ["clock", "clock#day"],
+    "modules-right": ["custom/music", "custom/mic-state", "pulseaudio", "temperature", "tray"],
     "custom/music": {
         "format": "{}",
         "max-length": 40,
@@ -23,8 +23,21 @@
     },
 
     "clock": {
+        "format": "{:%H:%M}",
         "tooltip-format": "<big>{:%d %b %Y (%W)}</big> \n\n {calendar}"
+    },
+    
+    "clock#day": {
+        "format": "{:(%d %W)}",
+    },
+    
+    "temperature": {
+	// "thermal-zone": 2,
+	    "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
+	    "critical-threshold": 80,
+	    "format": "{temperatureC}°<small>C</small>"
     }
+
 }
 
 

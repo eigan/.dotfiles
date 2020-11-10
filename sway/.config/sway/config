@@ -27,6 +27,8 @@ bindsym $mod+Shift+q kill
 
 bindsym F2 exec pulseaudio-ctl mute-input && pkill -SIGRTMIN+8 waybar
 # bindsym --release F2 exec pulseaudio-ctl mute-input
+bindsym --release F3 exec pulseaudio-ctl mute-input && pkill -SIGRTMIN+8 waybar
+bindsym --no-repeat F3 exec pulseaudio-ctl mute-input && pkill -SIGRTMIN+8 waybar
 
 
 # i3-lock: Bind to F19
@@ -190,9 +192,5 @@ bindsym F11 exec amixer set Master -q 5%-
 bindcode $xdebugToggle exec /srv/cc5/devel/vagrant/xdebug_toggle
 
 exec_always waybar
-
-# exec waybar -b bar1
-
-#exec for i in $HOME/.boot/sway/*;do source $i;done
 
 

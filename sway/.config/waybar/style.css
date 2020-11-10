@@ -8,18 +8,12 @@
 
 window#waybar {
     background: #293241;
-    padding: 4px;
+    transition: none;
 }
 
 #workspaces button {
     padding: 0 5px;
-    background: transparent;
 }
-
-window#waybar {
-    transition: none;
-}
-
 
 #workspaces button:hover {
     background: rgba(255, 255, 255, 0.1);
@@ -31,8 +25,16 @@ window#waybar {
 }
 
 
-#clock {
-    background-color: rgba(255,255,255, 0.1);
+#clock small {
+   color: red;
+}
+
+#clock.day {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+#custom-music {
+    color: rgba(255, 255, 255, 0.2);
 }
 
 box widget label {
@@ -48,11 +50,11 @@ box widget image {
 }
 
 .mic-muted {
-    background-color: #DB3A34;
+    background-color: #C56461;
     min-width: 20px;
 }
 
 .mic-unmuted {
-    background-color: #177E89;
+    background-color: #8CB14C;
     min-width: 20px;
 }
