@@ -2,4 +2,4 @@ swayidle -w \
   timeout 1 'swaymsg "output * dpms off"' \
   resume 'swaymsg "output * dpms on "; pkill -nx swayidle'
 
-swaylock -c "#000000" -u
+/usr/bin/swaylock -c "#000000" -u
