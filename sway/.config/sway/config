@@ -36,6 +36,7 @@ bindcode 197 exec lock
 
 # Screenshot
 bindsym --release Print exec grim -g "$(slurp)" - | swappy -f -
+bindsym --release Shift+Print exec grim -g "$(slurp; sleep 2)" - | swappy -f -
 
 # App launcher: Bind to $mod+tab
 bindsym $mod+Tab exec /home/einar/projects/eigan/sirula/target/release/sirula
