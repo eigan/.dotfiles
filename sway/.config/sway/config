@@ -25,10 +25,10 @@ bindsym $mod+Return exec terminator
 # kill focused window
 bindsym $mod+Shift+q kill
 
-bindsym F2 exec pulseaudio-ctl mute-input && pkill -SIGRTMIN+8 waybar
-# bindsym --release F2 exec pulseaudio-ctl mute-input
-bindsym --release F3 exec pulseaudio-ctl mute-input && pkill -SIGRTMIN+8 waybar
-bindsym --no-repeat F3 exec pulseaudio-ctl mute-input && pkill -SIGRTMIN+8 waybar
+bindsym F2 exec pactl set-source-mute @DEFAULT_SOURCE@ toggle && pkill -SIGRTMIN+8 waybar
+# bindsym --release F2 exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+bindsym --release F3 exec pactl set-source-mute @DEFAULT_SOURCE@ toggle && pkill -SIGRTMIN+8 waybar
+bindsym --no-repeat F3 exec pactl set-source-mute @DEFAULT_SOURCE@ toggle && pkill -SIGRTMIN+8 waybar
 
 
 # i3-lock: Bind to F19

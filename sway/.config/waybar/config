@@ -19,7 +19,7 @@
         "interval": 60,
         "signal": 8,
         "exec": "$HOME/bin/mic-state.sh", 
-        "on-click": "pulseaudio-ctl mute-input ; pkill -SIGRTMIN+8 waybar"
+        "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle ; pkill -SIGRTMIN+8 waybar"
     },
 
     "clock": {
