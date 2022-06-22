@@ -1,0 +1,26 @@
+default partial
+xkb_symbols "basic" {
+	include "no"
+	// include "level3(caps_switch)"
+	name[Group1] = "AppleKeyboard";
+
+	key <CAPS> { [ Hyper_L, Hyper_L ] };
+	key <LWIN> { [ NoSymbol, Alt_L  ] };
+	key <LALT> { [ ISO_Level3_Shift, Mode_switch, Mode_switch  ] };
+	
+	key <AE04> { [ 4, dollar, 4, currency ] };
+		
+	key <AE07> { [ 7, slash, braceleft, braceleft ] };
+	key <AE08> { [ 8, parenleft, bracketleft, braceleft ] };
+	key <AE09> { [ 9, parenright, bracketright, braceright ] };
+//	key <AE10> { [ 0, equal, braceright, degree, braceright ] };
+	
+	key <AE12> { [ backslash, dead_grave, dead_grave ] };
+	key <AD12> { [ asciitilde, asciicircum ] };
+	key <AC12> { [ apostrophe, asterisk, at ] };
+
+    key <TLDE> { [ less, greater, greater ]};
+    key <LSGT> { [ bar, bar, bar ]};
+    
+	key <PRSC> { [ Print ]};
+};

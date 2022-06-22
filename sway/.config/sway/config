@@ -3,9 +3,13 @@ set $screenshotKey 107
 set $xdebugToggle 78
 
 set $MOUSE "1133:49277:Logitech_Gaming_Mouse_G502_Consumer_Control"
+focus_follows_mouse no
 
 input "type:keyboard" {
-    xkb_layout varmilo 
+    xkb_layout varmilo
+
+#    xkb_layout apple_keyboard
+#    xkb_options apple:alupckeys,apple:badmap
 }
 
 output DP-3 pos 0 0 bg #000000 solid_color
