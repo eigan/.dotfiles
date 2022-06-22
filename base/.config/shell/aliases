@@ -36,7 +36,7 @@ alias wx="./docker/xdebug_toggle"
 # PHP
 alias phpx="php -d zend_extension=xdebug.so"
 alias phpxu="php -d zend_extension=xdebug.so vendor/bin/phpunit"
-alias phpp="php -d zend_extension=xdebug.so -d xdebug.profiler_enable=1"
+alias phpp="php -d zend_extension=xdebug.so -d xdebug.mode=profile"
 alias phpsh="psysh"
 
 # List directory contents
@@ -125,8 +125,9 @@ alias glgg='git log --graph'
 alias glgga='git log --graph --decorate --all'
 alias glgm='git log --graph --max-count=10'
 alias glo='git log --oneline --decorate'
-alias glol="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
-alias glols="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --stat"
+alias gclog="git log --graph --pretty='%s'"
+alias glol="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ch) %C(bold blue)<%an>%Creset'"
+alias glols="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ch) %C(bold blue)<%an>%Creset' --stat"
 alias glod="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset'"
 alias glods="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset' --date=short"
 alias glola="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --all"
