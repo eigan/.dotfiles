@@ -1,6 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=./bin:$HOME/bin:$HOME/:node_modules/.bin/:vendor/bin:.config/composer/vendor/bin/:/usr/local/bin:/usr/lib/node_modules/.bin:$HOME/.gem/ruby/2.4.0/bin/:/home/einar/.gem/ruby/2.4.0/bin:$HOME/.yarn/bin/:$PATH:
-export PATH="$HOME/.phpenv/bin:$HOME/.phpenv/shims:$PATH"
+export PATH=$HOME/bin:$PATH:$HOME/:node_modules/.bin/:vendor/bin:$HOME/.config/composer/vendor/bin/:/usr/local/bin:/usr/lib/node_modules/.bin:$HOME/.gem/ruby/2.4.0/bin:$HOME/.yarn/bin/
 
 # Path to zsh init script
 export ZSH=$HOME/.config/zsh
