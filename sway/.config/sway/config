@@ -174,15 +174,14 @@ client.background       #ffffff
 
 # Other keybindings
 # MUSIC CONTROL
-# - Spotify2
-bindsym XF86AudioPlay exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
-bindsym F8 exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+bindsym XF86AudioPlay exec exec playerctl -p spotify -a play-pause
+bindsym F8 exec playerctl -a -p spotify play-pause
 
-bindsym XF86AudioNext exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
-bindsym F9 exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+bindsym XF86AudioNext exec playerctl -p spotify -a next
+bindsym F9 exec playerctl -p spotify -a next
 
-bindsym XF86AudioPrev exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
-bindsym F7 exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+bindsym XF86AudioPrev exec playerctl -p spotify -a previous
+bindsym F7 exec playerctl -p spotify -a previous
 
 bindsym XF86AudioRaiseVolume exec amixer set Master -q 5%+
 bindsym F12 exec amixer set Master -q 5%+
