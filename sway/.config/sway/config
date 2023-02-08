@@ -24,19 +24,16 @@ font xft:Fira Code, FontAwesome 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec terminator
+bindsym $mod+Return exec wezterm
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
-bindsym F2 exec pactl set-source-mute @DEFAULT_SOURCE@ toggle && pkill -SIGRTMIN+8 waybar
-# bindsym --release F2 exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
-bindsym --release F3 exec pactl set-source-mute @DEFAULT_SOURCE@ toggle && pkill -SIGRTMIN+8 waybar
-bindsym --no-repeat F3 exec pactl set-source-mute @DEFAULT_SOURCE@ toggle && pkill -SIGRTMIN+8 waybar
-
+# Toggle mic (Note: Mouse button is triggering F6)
+bindsym F6 exec pactl set-source-mute @DEFAULT_SOURCE@ toggle && pkill -SIGRTMIN+8 waybar
 
 # i3-lock: Bind to F19
-bindcode 197 exec lock
+bindcode 197 exec swaylock
 
 # Screenshot
 bindsym --release Print exec grim -g "$(slurp)" - | swappy -f -
@@ -44,6 +41,7 @@ bindsym --release Shift+Print exec grim -g "$(slurp; sleep 2)" - | swappy -f -
 
 # App launcher: Bind to $mod+tab
 bindsym $mod+Tab exec /home/einar/projects/eigan/sirula/target/release/sirula
+bindsym $mod+m exec emote
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -198,4 +196,7 @@ bindcode $xdebugToggle exec /srv/cc5/devel/vagrant/xdebug_toggle
 exec_always waybar
 exec mako
 
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec hash dbus-update-activation-environment 2>/dev/null && \
+     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
