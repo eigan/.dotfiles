@@ -9,7 +9,7 @@
     cursor_shape = underline
     cursor_color = "#839496"
     font = Source Code Pro Medium 9
-    foreground_color = "#839496"
+    foreground_color = "#deddda"
     show_titlebar = False
     scrollback_lines = 3000
     scrollback_infinite = True
