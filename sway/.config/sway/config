@@ -115,7 +115,7 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace $space9
 bindsym $mod+Shift+0 move container to workspace $space0
 
-exec --no-startup-id terminator
+exec --no-startup-id kitty
 
 # My spotify versions messes with class stuff: https://github.com/i3/i3/issues/2060
 for_window [class="Spotify"] move to workspace $space0
