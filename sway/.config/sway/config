@@ -193,8 +193,7 @@ bindsym F12 exec amixer set Master -q 5%+
 bindsym XF86AudioLowerVolume exec amixer set Master -q 5%-
 bindsym F11 exec amixer set Master -q 5%-
 
-
-// Debug mode 
+# Debug mode 
 bindcode $xdebugToggle exec cc5php toggle-xdebug
 
 
