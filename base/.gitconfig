@@ -18,6 +18,8 @@
 #	delete-both="!f() { git branch -D "$1" && git push origin --delete "$1"; }; f"
 	commitsAtDate = "!f() { git log --all --pretty='format:%C(yellow)%h %G? %ad%Cred%d %Creset%s%C(cyan) [%cn]' --decorate --after=\"$1 0:00\" --before=\"$1 23:59\" --author \"`git config user.name`\"; }; f"
     unstage="!git restore --staged " 
+    stashgrep = "!f() { for i in `git stash list --format=\"%gd\"` ; \
+              do git stash show -p $i | grep -H --label=\"$i\" \"$@\" ; done ; }; f"
 [color]
 	ui = true
 
@@ -29,6 +31,7 @@
 [credential]
 	helper = /usr/lib/git-core/git-credential-libsecret
 [rebase]
+	instructionFormat = (%an <%ae>) %s
 	instructionFormat = (%an <%ae>) %s
 [commit]
 	gpgsign = true 
@@ -42,3 +45,28 @@
 	rebase = true
 [gpg]
 	program = gpg2
+	
+[pager]
+#    diff = delta
+#    log = delta
+#    reflog = delta
+#    show = delta
+#    blame = delta
+
+[interactive]
+#    diffFilter = delta --color-only --features=interactive
+
+[delta]
+    features = default
+
+[delta "default"]
+    syntax-themme=gruvbox-dark
+    line-numbers = true
+    commit-decoration-style = blue ol
+    commit-style = raw
+    file-style = omit
+    hunk-header-decoration-style = blue box
+    hunk-header-file-style = red
+    hunk-header-line-number-style = "#067a00"
+    hunk-header-style = file line-number syntax
+
