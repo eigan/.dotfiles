@@ -6,6 +6,30 @@
     color: white;
 }
 
+window#waybar.bottom {
+    padding: 20px;
+    margin: 20px;
+}
+
+window.bottom .error {
+    background: red;
+    padding: 30px 1170px;
+    font-size: 18px;
+}
+
+window#waybar.bottom .error label {
+    padding: 10px 100px;
+}
+
+window.bottom .success {
+    padding: 10px 700px;
+    font-size: 14px;
+}
+
+window#waybar.bottom .success label {
+    padding: 10px 100px;
+}
+
 window#waybar {
     background: #293241;
     transition: none;
@@ -20,7 +44,8 @@ window#waybar {
     box-shadow: none;
 }
 
-#workspaces button.focused {
+#workspaces button.focused,
+#workspaces button.active {
     background: rgba(255, 255, 255, 0.1);
 }
 
