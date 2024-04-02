@@ -1,7 +1,7 @@
-{
+[{
     "layer": "top",
 	"output": ["DP-1", "DP-2", "DP-3"],
-    "modules-left": ["sway/workspaces"],
+    "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock", "clock#day"],
     "modules-right": ["custom/goc", "custom/ticker", "custom/music", "custom/mic-state", "pulseaudio", "temperature", "tray"],
     "custom/ticker": {

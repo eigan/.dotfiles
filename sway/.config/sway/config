@@ -12,6 +12,7 @@ set $space1 "1"
 set $space2 "2"
 set $space3 "3"
 set $space4 "4"
+set $space6 "6"
 set $space9 "9"
 set $space0 "10"
 
@@ -205,8 +206,9 @@ bindcode $xdebugToggle exec cc5php toggle-xdebug
 # Use swaymsg -t get_tree to get info to use here
 #
 for_window [class="Spotify"] move to workspace $space0
-assign [class="slack"] $space9
-assign [class="telegram-desktop"] $space9
+for_window [class="Slack"] move to workspace $space9
+for_window [app_id="org.telegram.desktop"] move to workspace $space9
+for_window [class="Chromium"] move to workspace $space6
 
 
 

@@ -13,7 +13,7 @@ window#waybar.bottom {
 
 window.bottom .error {
     background: red;
-    padding: 30px 1170px;
+    padding: 300px 1170px;
     font-size: 18px;
 }
 

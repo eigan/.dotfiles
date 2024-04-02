@@ -14,7 +14,7 @@ xkb_symbols "basic" {
 //	key <AE10> { [ 0, equal, braceright, degree, braceright ] };
 	
 	key <AE12> { [ backslash, dead_grave, dead_grave ] };
-	key <AD12> { [ asciitilde, asciicircum ] };
+	key <AD12> { [ asciitilde, asciicircum, grave, grave ] };
 	key <AC12> { [ apostrophe, asterisk, at ] };
 
 	key <PRSC> { [ Print ]};

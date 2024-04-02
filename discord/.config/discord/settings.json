@@ -8,5 +8,6 @@
     "width": 2558,
     "height": 707
   },
-  "SKIP_HOST_UPDATE": true
+  "SKIP_HOST_UPDATE": true,
+  "chromiumSwitches": {}
 }

@@ -20,8 +20,10 @@ if [[ ! " ${computers[@]} " =~ " $(hostname -s) " ]]; then
     PRE_PROMPT="%{$fg_bold[blue]%}%{$fg[red]%}  PRODUCTION  %{$reset_color%}"$'\n'
 fi
 
-RPROMPT='$(current_customer) %*'
-PROMPT='$PRE_PROMPT%m %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info) '
+RPROMPT=''
+PROMPT='
+$PRE_PROMPT%m %{$fg[cyan]%}%d%{$reset_color%} $(git_prompt_info)
+> '
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "

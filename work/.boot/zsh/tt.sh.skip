@@ -1,28 +1,23 @@
 autoload -U add-zsh-hook
-
+ autoload colors; colors
+  
 hook_function()
 {
-  if [[ $1 == tt* ]] || [[ $1 == vim* ]] ; then
-  	# Disable strict mode on `tt` and `vim` command
+  if [[ $1 == goc* ]] || [[ $1 == vim* ]] ; then
+  	# Disable strict mode on `goc` and `vim` command
   	return
   fi
   
   # Execute command, checks for hours registered
-  result=$(tt today --cache-life 60)
+  result=$(/home/"$USER"/bin/goc status)
   
-  if [ $? -ne 0 ]; then
-      result=$(tt today --cache-clear)
-  fi
 
-  if [ $? -ne 0 ]; then
-	  
-    echo $result
+  if [[ "$result" == *"No current task"* ]]; then
+    # `goc` command was unsuccessful. Print angry message!
+    echo $fg_bold[red]"\n---------------------\n"Fix your work hours!!"\n---------------------\n"$reset_color
 
-    # `tt` command was unsuccessful. Print angry message!
-    echo "Please fix your hours!!"
-  	
     # Prevent next command
-    kill -s INT $$
+    #kill -s INT $$
   fi   
 }
 

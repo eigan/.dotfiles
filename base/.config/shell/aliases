@@ -1,3 +1,7 @@
+# Work
+alias cc5p="cc5php console"
+alias cc5="cc5d exec php cc5"
+
 # Linux
 alias halt="shutdown -h now"
 alias restart="shutdown -r now"
@@ -23,6 +27,7 @@ alias x="startx"
 # PHP
 alias phpx='php -d "zend_extension=xdebug.so"'
 alias phpxu='phpx vendor/bin/phpunit'
+alias phpcovu='phpx -d max_execution_time=-1 -d xdebug.mode=coverage vendor/bin/phpunit'
 
 # Docker / xdebug thing
 alias wx="sh docker/xdebug_toggle"
@@ -181,14 +186,10 @@ alias gsps='git show --pretty=short --show-signature'
 alias gsr='git svn rebase'
 alias gss='git status -s'
 alias gst='git status'
-alias gsta='git stash save'
-alias gstaa='git stash apply'
-alias gstc='git stash clear'
-alias gstd='git stash drop'
-alias gstl='git stash list'
+
+alias gstu='git stash -u'
 alias gstp='git stash pop'
 alias gsts='git stash show --text'
-alias gstall='git stash --all'
 alias gsu='git submodule update'
 
 alias gts='git tag -s'

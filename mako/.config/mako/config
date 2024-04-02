@@ -1,8 +1,13 @@
 default-timeout=100000
 font=Fira Code Medium 9
 layer=overlay
+outer-margin=10,20
 padding=10
-border-size=4
-background-color=#293241
+height=500
+width=350
+border-size=2
+background-color=#293241CC
 border-color=#1b2029
 text-color=#FFFFFFAA
+icons=1
+border-radius=5
