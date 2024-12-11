@@ -4,16 +4,11 @@
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock", "clock#day"],
     "modules-right": ["custom/goc", "custom/ticker", "custom/music", "custom/mic-state", "pulseaudio", "temperature", "tray"],
-    "custom/ticker": {
-        "format": "{}",
-        "interval": 10,
-        "exec": "NO_COLOR=1 $HOME/bin/ticker.sh SALME.OL", 
-    },
 
    "custom/goc": {
         "format": "{}",
         "interval": 10,
-        "exec": "goc status --oneline", 
+        "exec": "goc status --oneline" 
     },
 
     "custom/music": {
@@ -40,16 +35,6 @@
     },
     
     "clock#day": {
-        "format": "{:(%d %V)}",
-    },
-    
-    "temperature": {
-	// "thermal-zone": 2,
-	    "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
-	    "critical-threshold": 80,
-	    "format": "{temperatureC}°<small>C</small>"
+        "format": "{:(%d %V)}"
     }
-
-}
-
-
+}]
