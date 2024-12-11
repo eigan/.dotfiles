@@ -39,6 +39,7 @@ input "type:keyboard" {
 output DP-3 pos 0 0 bg #000000 solid_color
 output DP-1 pos 2560 0 bg #000000 solid_color
 output DP-2 pos 5120 0 bg #000000 solid_color
+output HDMI-A-1 pos 2560 -1080 bg #000000 solid_color
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -63,7 +64,7 @@ client.background       #ffffff
 # Keyboard interaction
 ########################################################################################################
 # start a terminal
-bindsym $mod+Return exec wezterm
+bindsym $mod+Return exec terminator
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -79,7 +80,7 @@ bindsym --release Print exec grim -g "$(slurp)" - | swappy -f -
 bindsym --release Shift+Print exec grim -g "$(slurp; sleep 2)" - | swappy -f -
 
 # App launcher: Bind to $mod+tab
-bindsym $mod+Tab exec /home/einar/projects/eigan/sirula/target/release/sirula
+bindsym $mod+Tab exec fuzzel
 bindsym $mod+m exec emote
 
 # alternatively, you can use the cursor keys:
@@ -216,9 +217,14 @@ for_window [class="Chromium"] move to workspace $space6
 ########################################################################################################
 # Bootstrap
 ########################################################################################################
-exec --no-startup-id wezterm
-exec_always waybar
+exec --no-startup-id terminator
 exec mako
+
+
+bar {
+    swaybar_command waybar
+}
+
 
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec hash dbus-update-activation-environment 2>/dev/null && \
