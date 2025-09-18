@@ -1,7 +1,3 @@
-# Work
-alias cc5p="cc5php console"
-alias cc5="cc5d exec php cc5"
-
 # Linux
 alias halt="shutdown -h now"
 alias restart="shutdown -r now"
@@ -9,10 +5,10 @@ alias df="df -x tmpfs -x devtmpfs -h"
 alias c="clear"
 alias h="history -E"
 
+alias ssh-add='ssh-add -t 8h'
 
-alias gpg="gpg2 --homedir=$GNUPGHOME"
-alias gpg2="gpg2 --homedir=$GNUPGHOME"
-
+#alias gpg="gpg2 --homedir=$GNUPGHOME"
+#alias gpg2="gpg2 --homedir=$GNUPGHOME"
 
 # Package management
 alias archupdate="yay -Syu"
@@ -29,21 +25,10 @@ alias phpx='php -d "zend_extension=xdebug.so"'
 alias phpxu='phpx vendor/bin/phpunit'
 alias phpcovu='phpx -d max_execution_time=-1 -d xdebug.mode=coverage vendor/bin/phpunit'
 
-# Docker / xdebug thing
-alias wx="sh docker/xdebug_toggle"
-
-# Laravel
-alias a="php -d memory_limit=-1 artisan"
-alias ax="phpx -d memory_limit=-1 artisan"
-
-# Docker utils
-alias wx="./docker/xdebug_toggle"
-
 # PHP
 alias phpx="php -d zend_extension=xdebug.so"
 alias phpxu="php -d zend_extension=xdebug.so vendor/bin/phpunit"
 alias phpp="php -d zend_extension=xdebug.so -d xdebug.mode=profile"
-alias phpsh="psysh"
 
 # List directory contents
 alias ls='ls --color=tty'
@@ -55,7 +40,6 @@ alias la='ls -lAh'
 
 # Color grep
 alias grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
-
 
 ## super user alias
 alias _='sudo'
