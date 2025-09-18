@@ -7,6 +7,7 @@ xkb_symbols "basic" {
 	key <CAPS> { [ Hyper_L, Hyper_L ] };
 	key <LWIN> { [ ISO_Level3_Shift, Mode_switch, Mode_switch ] };
 	key <AE04> { [ 4, dollar, 4, currency ] };
+    key <SPCE> { [ space, space, space, space ] };
 		
 	key <AE07> { [ 7, slash, braceleft, braceleft ] };
 	key <AE08> { [ 8, parenleft, bracketleft, braceleft ] };

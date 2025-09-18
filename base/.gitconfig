@@ -34,9 +34,9 @@
 	instructionFormat = (%an <%ae>) %s
 	instructionFormat = (%an <%ae>) %s
 [commit]
-	gpgsign = true 
+	gpgsign = false
 [tag]
-	gpgsign = true
+	gpgsign = false
 	sort = -version:refname
 [diff]
     colorMoved = default
@@ -45,6 +45,7 @@
 	rebase = true
 [gpg]
 	program = gpg2
+	format = ssh
 	
 [pager]
 #    diff = delta

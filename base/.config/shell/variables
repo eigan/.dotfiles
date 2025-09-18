@@ -4,7 +4,7 @@ fi
 
 export EDITOR='micro'
 export MANPATH="/usr/local/man:$MANPATH"
-
+export GO=/usr/bin/go
 export GPG_TTY=$(tty)
 
 export GNUPGHOME=$HOME/.config/gnupg

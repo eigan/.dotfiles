@@ -1,5 +1,7 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$PATH:$HOME/:node_modules/.bin/:vendor/bin:$HOME/.config/composer/vendor/bin/:/usr/local/bin:/usr/lib/node_modules/.bin:$HOME/.gem/ruby/2.4.0/bin:$HOME/.yarn/bin/:$HOME/go/bin/
+export PATH=$HOME/bin:$PATH:$HOME/:node_modules/.bin/:vendor/bin:$HOME/.config/composer/vendor/bin/:/usr/local/bin:/usr/lib/node_modules/.bin:$HOME/.gem/ruby/2.4.0/bin:$HOME/.yarn/bin/:$HOME/go/bin/:$HOME/.config/npm/lib/bin/
+
+export XDG_RUNTIME_DIR=/run/user/$(id -u)
 
 # Path to zsh init script
 export ZSH=$HOME/.config/zsh
